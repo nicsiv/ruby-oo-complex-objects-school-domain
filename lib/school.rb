@@ -1,7 +1,7 @@
 class School 
     attr_accessor  :roster
     def initialize(name)
-        @roster ={}
+        @roster = {}
     end
 
     def add_student(student_name, grade)
@@ -14,7 +14,9 @@ class School
     end
 
     def sort 
-        @roster.each {|key, value| value.sort!}
+        @roster.each do |key, value| 
+            value.sort!
+        end
     end
 end
 
